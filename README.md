@@ -5,7 +5,7 @@
 ### 🛠️ Tech Stack
 
 - **Backend**: Laravel, PHP
-- **Frontend**: TypeScript, Vue.js (or your preferred frontend tech)
+- **Frontend**: TypeScript, Vue.js
 - **Database**: MySQL, MongoDB
 - **DevOps**: Docker
 - **Tools**: Git, VSCode
