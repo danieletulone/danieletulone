@@ -1,4 +1,11 @@
-## Software Architect & Fullstack Developer
+## Startupper, Software Architect, Fullstack Developer
+
+Coding for profession, coding for hobby.
+
+## Startups
+
+- **BubblePod**
+- **Spods**
 
 ### Tech Stack
 
@@ -16,7 +23,7 @@
 
 ---
 
-### 📫 How to Reach Me
+### How to Reach Me
 
 - **Email**: danieletulone.work@gmail.com
 - **LinkedIn**: [Daniele Tulone](https://www.linkedin.com/in/daniele-tulone-994b38173/)
