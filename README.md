@@ -1,15 +1,12 @@
-# 👋 Hello, I'm Daniele
+## Software Architect & Fullstack Developer
 
-## 👨‍💻 Software Architect & Fullstack Developer
+### Tech Stack
 
-### 🛠️ Tech Stack
-
-- **Backend**: Laravel, PHP
-- **Frontend**: TypeScript, Vue.js
-- **Database**: MySQL, MongoDB
-- **DevOps**: Docker
+- **Backend**: Laravel, PHP, Firebase Functions (Typescript)
+- **Frontend**: Flutter, Vue.js (Typescript)
+- **Database**: MySQL, MongoDB, Firestore
+- **DevOps**: Docker, Github Actions
 - **Tools**: Git, VSCode
-
 ---
 
 ### Focus Areas
@@ -21,6 +18,6 @@
 
 ### 📫 How to Reach Me
 
-- **Email**: daniele@dedecube.com
+- **Email**: danieletulone.work@gmail.com
 - **LinkedIn**: [Daniele Tulone](https://www.linkedin.com/in/daniele-tulone-994b38173/)
-
+- **Phone**: +39 3513837382
