@@ -6,7 +6,7 @@
 - **Frontend**: Flutter, Vue.js (Typescript)
 - **Database**: MySQL, MongoDB, Firestore
 - **DevOps**: Docker, Github Actions
-- **Tools**: Git, VSCode
+- **Tools**: Git, Cursor, Warp, Trello, DCM, Eslint
 ---
 
 ### Focus Areas
