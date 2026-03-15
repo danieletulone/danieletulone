@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 
 export default function ContactsPage() {
   return (
-    <div className="min-h-[100svh] flex flex-col p-4 sm:p-8 gap-y-8 sm:gap-y-16">
+    <div className="h-[100svh] flex flex-col">
       <Header />
 
-      <main className="flex-1 grid grid-cols-1 md:grid-cols-12 gap-4 items-center md:items-end">
+      <main className="flex-1 min-h-0 grid grid-cols-1 md:grid-cols-12 gap-4 items-center md:items-end px-4 sm:px-8 pb-4 sm:pb-8">
         <div className="md:col-span-3 flex flex-col gap-6 order-2 md:order-1">
           <div className="animate-fade-up" style={{ animationDelay: '200ms' }}>
             <h1 className="text-2xl sm:text-3xl font-bold text-foreground">Let&apos;s connect</h1>
