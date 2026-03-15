@@ -18,7 +18,7 @@ export default function AboutPage() {
       <main className="flex-1">
         {/* Intro */}
         <section className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 mb-16 sm:mb-24">
-          <div className="md:col-span-3 animate-fade-up md:sticky md:top-8 md:self-start">
+          <div className="md:col-span-3 animate-fade-up sticky top-[4.5rem] sm:top-[6.5rem] self-start z-10 bg-background py-2 sm:py-0">
             <h1 className="text-3xl sm:text-4xl font-bold text-foreground">I&apos;m Daniele</h1>
             <p className="text-sm text-muted mt-2">Engineer, builder, relentless experimenter.</p>
           </div>
@@ -66,7 +66,7 @@ export default function AboutPage() {
 
         {/* Work Experiences */}
         <section className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 mb-16 sm:mb-24">
-          <div className="md:col-span-3 animate-fade-up md:sticky md:top-8 md:self-start">
+          <div className="md:col-span-3 animate-fade-up sticky top-[4.5rem] sm:top-[6.5rem] self-start z-10 bg-background py-2 sm:py-0">
             <h2 className="text-2xl font-bold text-foreground">Work</h2>
             <p className="text-xs text-muted mt-2">AI-driven products, startup leadership, and hands-on engineering</p>
           </div>
@@ -152,7 +152,7 @@ export default function AboutPage() {
 
         {/* Education */}
         <section className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6">
-          <div className="md:col-span-3 animate-fade-up md:sticky md:top-8 md:self-start">
+          <div className="md:col-span-3 animate-fade-up sticky top-[4.5rem] sm:top-[6.5rem] self-start z-10 bg-background py-2 sm:py-0">
             <h2 className="text-2xl font-bold text-foreground">Education</h2>
             <p className="text-xs text-muted mt-2">From classical studies to computer science, design, and coding</p>
           </div>
