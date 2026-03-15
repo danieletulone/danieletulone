@@ -1,8 +1,6 @@
 import './global.css';
 import { Manrope } from 'next/font/google';
 import type { Metadata } from 'next';
-import { SmoothScroll } from '@/components/smooth-scroll';
-
 const font = Manrope({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -57,10 +55,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
       </head>
-      <body className="flex flex-col min-h-screen">
-        <SmoothScroll>
-          {children}
-        </SmoothScroll>
+      <body className="flex flex-col">
+        {children}
       </body>
     </html>
   );
