@@ -1,16 +1,63 @@
-import { RootProvider } from 'fumadocs-ui/provider/next';
 import './global.css';
-import { Inter } from 'next/font/google';
+import { Manrope } from 'next/font/google';
+import type { Metadata } from 'next';
 
-const inter = Inter({
-  subsets: ['latin'],
-});
+const font = Manrope({ subsets: ['latin'] });
 
-export default function Layout({ children }: LayoutProps<'/'>) {
+export const metadata: Metadata = {
+  metadataBase: new URL('https://danieletulone.com'),
+  title: {
+    default: 'Daniele Tulone — AI-Native Engineer',
+    template: '%s — Daniele Tulone',
+  },
+  description: 'AI-native engineer turning business problems into software with agentic code. Specializing in agentic AI, Claude Code, security & compliance.',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://danieletulone.com',
+    siteName: 'Daniele Tulone',
+    title: 'Daniele Tulone — AI-Native Engineer',
+    description: 'AI-native engineer turning business problems into software with agentic code. Specializing in agentic AI, Claude Code, security & compliance.',
+    images: [
+      {
+        url: '/daniele-tulone.jpeg',
+        width: 800,
+        height: 800,
+        alt: 'Daniele Tulone',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Daniele Tulone — AI-Native Engineer',
+    description: 'AI-native engineer turning business problems into software with agentic code.',
+    images: ['/daniele-tulone.jpeg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  alternates: {
+    canonical: '/',
+  },
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={inter.className} suppressHydrationWarning>
+    <html lang="en" className={`${font.className} dark`} suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='light'){document.documentElement.classList.remove('dark');document.documentElement.classList.add('light')}}catch(e){}})()`,
+          }}
+        />
+      </head>
       <body className="flex flex-col min-h-screen">
-        <RootProvider>{children}</RootProvider>
+        {children}
       </body>
     </html>
   );
