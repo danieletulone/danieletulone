@@ -5,7 +5,7 @@ import ThemeToggle from '@/components/theme-toggle';
 
 export default function Header() {
   return (
-    <header className="grid grid-cols-2 md:grid-cols-3 gap-4 relative sticky top-0 z-50 bg-background -mx-4 sm:-mx-8 px-4 sm:px-8 py-4 sm:py-8 -mt-4 sm:-mt-8">
+    <header className="grid grid-cols-2 md:grid-cols-3 gap-4 relative sticky top-0 z-50 bg-background px-4 sm:px-8 py-4 sm:py-8">
       <div className="self-center animate-fade-up flex items-center gap-3" style={{ animationDelay: '0ms' }}>
         <AvatarViewer src="/daniele-tulone.jpeg" alt="Daniele Tulone" />
         <a href="/">
