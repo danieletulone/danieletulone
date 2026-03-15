@@ -22,9 +22,6 @@
     "paths": {
       "@/*": [
         "./src/*"
-      ],
-      "fumadocs-mdx:collections/*": [
-        ".source/*"
       ]
     },
     "plugins": [
