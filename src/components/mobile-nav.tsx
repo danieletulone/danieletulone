@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef, useCallback } from 'react';
+import ButtonWithSlidingText from '@/components/button-with-sliding-text';
 import ThemeToggle from '@/components/theme-toggle';
 
 const links = [
@@ -9,9 +10,15 @@ const links = [
   { href: '/contacts', label: 'Contacts' },
 ];
 
+const socials = [
+  { href: 'https://github.com/danieletulone', label: 'github' },
+  { href: '#', label: 'medium' },
+  { href: '#', label: 'x.com' },
+  { href: 'https://linkedin.com/in/daniele-tulone-994b38173', label: 'linkedin' },
+];
+
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
-  const navRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
 
   const close = useCallback(() => {
@@ -26,20 +33,21 @@ export default function MobileNav() {
       if (e.key === 'Escape') close();
     }
 
-    function handleClickOutside(e: MouseEvent) {
-      if (navRef.current && !navRef.current.contains(e.target as Node)) close();
-    }
-
     document.addEventListener('keydown', handleKeyDown);
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('keydown', handleKeyDown);
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
+    return () => document.removeEventListener('keydown', handleKeyDown);
   }, [open, close]);
 
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [open]);
+
   return (
-    <div ref={navRef} className="md:hidden flex items-center justify-end gap-1">
+    <div className="md:hidden flex items-center justify-end gap-1">
       <ThemeToggle />
       <button
         ref={buttonRef}
@@ -47,7 +55,7 @@ export default function MobileNav() {
         aria-label={open ? 'Close menu' : 'Open menu'}
         aria-expanded={open}
         aria-controls="mobile-nav-menu"
-        className="w-10 h-10 flex items-center justify-center rounded-full text-foreground focus-ring"
+        className="relative z-60 w-10 h-10 flex items-center justify-center rounded-full text-foreground focus-ring"
       >
         <span className="sr-only">{open ? 'Close menu' : 'Open menu'}</span>
         <div className="flex flex-col gap-[5px]">
@@ -68,26 +76,50 @@ export default function MobileNav() {
         <nav
           id="mobile-nav-menu"
           aria-label="Mobile navigation"
-          className="absolute top-full right-0 mt-2 mr-4 sm:mr-8 z-50
-                     bg-accent/95 backdrop-blur-lg
-                     rounded-2xl p-2 min-w-[160px] border border-border
-                     animate-dropdown-in motion-reduce:animate-none"
+          className="fixed inset-0 z-50 bg-background flex flex-col justify-between p-4 sm:p-8 animate-menu-in motion-reduce:animate-none"
         >
-          <ul className="flex flex-col">
-            {links.map((link) => (
-              <li key={link.href}>
-                <a
+          <div className="animate-menu-item motion-reduce:animate-none flex items-center gap-3" style={{ animationDelay: '80ms' }}>
+            <img
+              src="/daniele-tulone.jpeg"
+              alt="Daniele Tulone"
+              className="w-8 h-8 rounded-full object-cover"
+            />
+            <div>
+              <div className="text-sm text-foreground font-bold">Daniele Tulone</div>
+              <div className="text-xs text-muted">CTO & AI Lead</div>
+            </div>
+          </div>
+
+          <div className="flex-1 flex flex-col justify-center gap-4">
+            {links.map((link, i) => (
+              <div
+                key={link.href}
+                className="animate-menu-item motion-reduce:animate-none"
+                style={{ animationDelay: `${120 + i * 60}ms` }}
+              >
+                <ButtonWithSlidingText
                   href={link.href}
+                  size="lg"
                   onClick={() => setOpen(false)}
-                  className="block py-3 px-4 text-sm text-foreground
-                             rounded-xl hover:bg-background transition-colors
-                             focus-ring focus-visible:!outline-offset-[-2px]"
                 >
                   {link.label}
-                </a>
-              </li>
+                </ButtonWithSlidingText>
+              </div>
             ))}
-          </ul>
+          </div>
+
+          <div
+            className="animate-menu-item motion-reduce:animate-none"
+            style={{ animationDelay: '360ms' }}
+          >
+            <nav aria-label="Social links" className="flex flex-wrap gap-x-1">
+              {socials.map((s) => (
+                <ButtonWithSlidingText key={s.label} href={s.href}>
+                  {s.label}
+                </ButtonWithSlidingText>
+              ))}
+            </nav>
+          </div>
         </nav>
       )}
     </div>
