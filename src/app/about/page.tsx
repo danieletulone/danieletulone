@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen flex flex-col p-4 sm:p-8 gap-y-8 sm:gap-y-16">
+    <div className="min-h-screen flex flex-col gap-y-8 sm:gap-y-16">
       <Header />
 
-      <main className="flex-1">
+      <main className="flex-1 px-4 sm:px-8">
         {/* Intro */}
         <section className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 mb-16 sm:mb-24">
           <div className="md:col-span-3 animate-fade-up sticky top-[4.5rem] sm:top-[6.5rem] self-start z-10 bg-background py-2 sm:py-0">
