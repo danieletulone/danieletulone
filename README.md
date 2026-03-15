@@ -1,45 +1,31 @@
-# danieletulone
+## Startupper, CTO & Fullstack Builder
 
-This is a Next.js application generated with
-[Create Fumadocs](https://github.com/fuma-nama/fumadocs).
+Coding for profession, coding for hobby.
 
-Run development server:
+## Startups
 
-```bash
-npm run dev
-# or
-pnpm dev
-# or
-yarn dev
-```
+- **Spods**
+- **BubblePod**
 
-Open http://localhost:3000 with your browser to see the result.
+### Tech Stack
 
-## Explore
+- **Agents**: Claude Code with Spec-Driven Development
+- **Backend**: Typescript, Express, Laravel, PHP
+- **Frontend**: React.js, Flutter, Vue.js, Typescript, Dart
+- **Database**: Firestore, SQL
 
-In the project, you can see:
 
-- `lib/source.ts`: Code for content source adapter, [`loader()`](https://fumadocs.dev/docs/headless/source-api) provides the interface to access your content.
-- `lib/layout.shared.tsx`: Shared options for layouts, optional but preferred to keep.
+### Focus Areas
 
-| Route                     | Description                                            |
-| ------------------------- | ------------------------------------------------------ |
-| `app/(home)`              | The route group for your landing page and other pages. |
-| `app/docs`                | The documentation layout and pages.                    |
-| `app/api/search/route.ts` | The Route Handler for search.                          |
+- **Agentic Coding**: Creating efficient workflows and tools for ai agents, aiming to 95% of codebase by ai.
+- **DX (Developer Experience)**: Creating efficient workflows and tools for developers.
+- **UX (User Experience)**: Building intuitive and user-friendly interfaces.
 
-### Fumadocs MDX
+---
 
-A `source.config.ts` config file has been included, you can customise different options like frontmatter schema.
+### How to Reach Me
 
-Read the [Introduction](https://fumadocs.dev/docs/mdx) for further details.
-
-## Learn More
-
-To learn more about Next.js and Fumadocs, take a look at the following
-resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
-  features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [Fumadocs](https://fumadocs.dev) - learn about Fumadocs
+- **Email**:
+  - daniele.tulone@spods.it
+  - danieletulone.work@gmail.com
+- **LinkedIn**: [Daniele Tulone](https://www.linkedin.com/in/daniele-tulone-994b38173/)
