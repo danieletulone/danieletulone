@@ -55,7 +55,7 @@ export default function MobileNav() {
         aria-label={open ? 'Close menu' : 'Open menu'}
         aria-expanded={open}
         aria-controls="mobile-nav-menu"
-        className="relative z-60 w-10 h-10 flex items-center justify-center rounded-full text-foreground focus-ring"
+        className="relative z-[110] w-10 h-10 flex items-center justify-center rounded-full text-foreground focus-ring"
       >
         <span className="sr-only">{open ? 'Close menu' : 'Open menu'}</span>
         <div className="flex flex-col gap-[5px]">
@@ -76,20 +76,8 @@ export default function MobileNav() {
         <nav
           id="mobile-nav-menu"
           aria-label="Mobile navigation"
-          className="fixed inset-0 z-50 bg-background flex flex-col justify-between p-4 sm:p-8 animate-menu-in motion-reduce:animate-none"
+          className="fixed inset-0 z-[100] bg-background flex flex-col justify-between p-4 pt-18 sm:p-8 sm:pt-18 animate-menu-in motion-reduce:animate-none"
         >
-          <div className="animate-menu-item motion-reduce:animate-none flex items-center gap-3" style={{ animationDelay: '80ms' }}>
-            <img
-              src="/daniele-tulone.jpeg"
-              alt="Daniele Tulone"
-              className="w-8 h-8 rounded-full object-cover"
-            />
-            <div>
-              <div className="text-sm text-foreground font-bold">Daniele Tulone</div>
-              <div className="text-xs text-muted">CTO & AI Lead</div>
-            </div>
-          </div>
-
           <div className="flex-1 flex flex-col justify-center gap-4">
             {links.map((link, i) => (
               <div
