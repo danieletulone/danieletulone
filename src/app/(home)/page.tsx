@@ -23,7 +23,7 @@ const jsonLd = {
 
 export default function HomePage() {
   return (
-    <div id="main" className="h-[100svh] overflow-hidden flex flex-col p-4 sm:p-8 gap-y-8 sm:gap-y-16">
+    <div id="main" className="h-[100svh] flex flex-col">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -32,7 +32,7 @@ export default function HomePage() {
 
       <Header />
 
-      <main id="content" className="flex-1 grid grid-cols-1 md:grid-cols-12 gap-4 items-end">
+      <main id="content" className="flex-1 min-h-0 grid grid-cols-1 md:grid-cols-12 gap-4 items-end px-4 sm:px-8 pb-4 sm:pb-8">
         <div className="md:col-span-2 flex flex-col gap-2 order-2 md:order-1 animate-fade-up" style={{ animationDelay: '300ms' }}>
           <p className="text-muted text-xs">
             I ship products where 95% of the code is AI-generated — orchestrating agents, designing secure systems, and pushing what&apos;s possible with agentic workflows.
@@ -43,7 +43,7 @@ export default function HomePage() {
         </div>
       </main>
 
-      <footer>
+      <footer className="px-4 sm:px-8 pb-4 sm:pb-8">
         <nav aria-label="Social links" className="flex flex-wrap gap-x-1 sm:gap-x-2">
           <span className="animate-fade-up" style={{ animationDelay: '400ms' }}><ButtonWithSlidingText href="https://github.com/danieletulone">github</ButtonWithSlidingText></span>
           <span className="animate-fade-up" style={{ animationDelay: '460ms' }}><ButtonWithSlidingText href="#">medium</ButtonWithSlidingText></span>
