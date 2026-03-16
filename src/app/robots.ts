@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://danieletulone.com/sitemap.xml',
+    sitemap: 'https://danieletulone.vercel.app/sitemap.xml',
   };
 }

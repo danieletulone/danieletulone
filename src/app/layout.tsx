@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 const font = Manrope({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://danieletulone.com'),
+  metadataBase: new URL('https://danieletulone.vercel.app'),
   title: {
     default: 'Daniele Tulone — AI-Native Engineer',
     template: '%s — Daniele Tulone',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://danieletulone.com',
+    url: 'https://danieletulone.vercel.app',
     siteName: 'Daniele Tulone',
     title: 'Daniele Tulone — AI-Native Engineer',
     description: 'AI-native engineer turning business problems into software with agentic code. Specializing in agentic AI, Claude Code, security & compliance.',
