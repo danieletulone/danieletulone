@@ -12,8 +12,7 @@ const links = [
 
 const socials = [
   { href: 'https://github.com/danieletulone', label: 'github' },
-  { href: '#', label: 'medium' },
-  { href: '#', label: 'x.com' },
+  { href: 'https://x.com/_toolone_', label: 'x.com' },
   { href: 'https://linkedin.com/in/daniele-tulone-994b38173', label: 'linkedin' },
 ];
 

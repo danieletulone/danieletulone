@@ -6,10 +6,11 @@ const jsonLd = {
   '@type': 'Person',
   name: 'Daniele Tulone',
   jobTitle: 'CTO & AI Lead',
-  url: 'https://danieletulone.com',
-  image: 'https://danieletulone.com/daniele-tulone.jpeg',
+  url: 'https://danieletulone.vercel.app',
+  image: 'https://danieletulone.vercel.app/daniele-tulone.jpeg',
   sameAs: [
     'https://github.com/danieletulone',
+    'https://x.com/_toolone_',
     'https://linkedin.com/in/daniele-tulone-994b38173',
   ],
   worksFor: {
@@ -46,9 +47,8 @@ export default function HomePage() {
       <footer className="px-4 sm:px-8 pb-4 sm:pb-8">
         <nav aria-label="Social links" className="flex flex-wrap gap-x-1 sm:gap-x-2">
           <span className="animate-fade-up" style={{ animationDelay: '400ms' }}><ButtonWithSlidingText href="https://github.com/danieletulone">github</ButtonWithSlidingText></span>
-          <span className="animate-fade-up" style={{ animationDelay: '460ms' }}><ButtonWithSlidingText href="#">medium</ButtonWithSlidingText></span>
-          <span className="animate-fade-up" style={{ animationDelay: '520ms' }}><ButtonWithSlidingText href="#">x.com</ButtonWithSlidingText></span>
-          <span className="animate-fade-up" style={{ animationDelay: '580ms' }}><ButtonWithSlidingText href="https://linkedin.com/in/daniele-tulone-994b38173">linkedin</ButtonWithSlidingText></span>
+          <span className="animate-fade-up" style={{ animationDelay: '460ms' }}><ButtonWithSlidingText href="https://x.com/_toolone_">x.com</ButtonWithSlidingText></span>
+          <span className="animate-fade-up" style={{ animationDelay: '520ms' }}><ButtonWithSlidingText href="https://linkedin.com/in/daniele-tulone-994b38173">linkedin</ButtonWithSlidingText></span>
         </nav>
       </footer>
     </div>
