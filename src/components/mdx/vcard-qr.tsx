@@ -1,5 +1,6 @@
 'use client';
 
+import { useCallback } from 'react';
 import { QRCodeSVG } from 'qrcode.react';
 
 const VCARD = [
@@ -9,9 +10,9 @@ const VCARD = [
   'FN:Daniele Tulone',
   'TITLE:CTO & AI Lead',
   'ORG:Spods',
-  'TEL;TYPE=CELL:+39XXXXXXXXXX',
-  'EMAIL;TYPE=INTERNET:daniele@tulone.dev',
-  'URL:https://danieletulone.com',
+  'TEL;TYPE=CELL:+393513837382',
+  'EMAIL;TYPE=INTERNET:danieletulone.work@gmail.com',
+  'URL:https://danieletulone.vercel.app',
   'URL:https://linkedin.com/in/daniele-tulone-994b38173',
   'URL:https://github.com/danieletulone',
   'NOTE:AI-native engineer. Agentic code\\, Claude Code skills\\, security & compliance.',
@@ -24,8 +25,15 @@ const LINKS = [
 ];
 
 export function VCardQR() {
-  const blob = new Blob([VCARD], { type: 'text/vcard' });
-  const downloadUrl = URL.createObjectURL(blob);
+  const handleDownload = useCallback(() => {
+    const blob = new Blob([VCARD], { type: 'text/vcard' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'daniele-tulone.vcf';
+    a.click();
+    URL.revokeObjectURL(url);
+  }, []);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-8 items-start">
@@ -38,13 +46,12 @@ export function VCardQR() {
             marginSize={0}
           />
         </div>
-        <a
-          href={downloadUrl}
-          download="daniele-tulone.vcf"
+        <button
+          onClick={handleDownload}
           className="text-xs text-muted hover:text-foreground transition-colors duration-200"
         >
           Download .vcf
-        </a>
+        </button>
       </div>
 
       <div className="flex flex-col gap-4">

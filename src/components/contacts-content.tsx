@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect, useCallback } from 'react';
 import { QRCodeSVG } from 'qrcode.react';
 
 const VCARD = [
@@ -9,9 +10,9 @@ const VCARD = [
   'FN:Daniele Tulone',
   'TITLE:CTO & AI Lead',
   'ORG:Spods',
-  'TEL;TYPE=CELL:+39XXXXXXXXXX',
-  'EMAIL;TYPE=INTERNET:daniele@tulone.dev',
-  'URL:https://danieletulone.com',
+  'TEL;TYPE=CELL:+393513837382',
+  'EMAIL;TYPE=INTERNET:danieletulone.work@gmail.com',
+  'URL:https://danieletulone.vercel.app',
   'URL:https://linkedin.com/in/daniele-tulone-994b38173',
   'URL:https://github.com/danieletulone',
   'NOTE:AI-native engineer. Agentic code\\, Claude Code skills\\, security & compliance.',
@@ -24,8 +25,24 @@ const LINKS = [
 ];
 
 export function QRHero() {
-  const blob = new Blob([VCARD], { type: 'text/vcard' });
-  const downloadUrl = URL.createObjectURL(blob);
+  const [downloadUrl, setDownloadUrl] = useState<string>('#');
+
+  useEffect(() => {
+    const blob = new Blob([VCARD], { type: 'text/vcard' });
+    const url = URL.createObjectURL(blob);
+    setDownloadUrl(url);
+    return () => URL.revokeObjectURL(url);
+  }, []);
+
+  const handleDownload = useCallback(() => {
+    const blob = new Blob([VCARD], { type: 'text/vcard' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'daniele-tulone.vcf';
+    a.click();
+    URL.revokeObjectURL(url);
+  }, []);
 
   return (
     <div className="flex flex-col items-center md:items-end gap-3">
@@ -40,13 +57,12 @@ export function QRHero() {
           aria-label="QR code containing Daniele Tulone's contact information"
         />
       </div>
-      <a
-        href={downloadUrl}
-        download="daniele-tulone.vcf"
+      <button
+        onClick={handleDownload}
         className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-foreground border border-border rounded-full hover:bg-accent hover:border-ring transition-all duration-200"
       >
         Download .vcf
-      </a>
+      </button>
     </div>
   );
 }
