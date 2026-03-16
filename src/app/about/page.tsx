@@ -38,11 +38,11 @@ export default function AboutPage() {
 
             <div className="animate-fade-up" style={{ animationDelay: '200ms' }}>
               <TechBadgeGroup>
-                <TechBadge variant="highlight">Agentic AI</TechBadge>
-                <TechBadge variant="highlight">Claude Code</TechBadge>
-                <TechBadge variant="highlight">Security &amp; Compliance</TechBadge>
-                <TechBadge variant="highlight">TypeScript</TechBadge>
-                <TechBadge variant="highlight">Python</TechBadge>
+                <TechBadge>Agentic AI</TechBadge>
+                <TechBadge>Claude Code</TechBadge>
+                <TechBadge>Security &amp; Compliance</TechBadge>
+                <TechBadge>TypeScript</TechBadge>
+                <TechBadge>Python</TechBadge>
                 <TechBadge>LLMs</TechBadge>
                 <TechBadge>MCP</TechBadge>
                 <TechBadge>Next.js</TechBadge>
@@ -78,8 +78,8 @@ export default function AboutPage() {
                   Leading the technical vision behind <a href="https://spodshr.com" className="text-foreground underline hover:text-muted transition-colors">Spods</a>, an AI-powered talent acquisition platform built for employment agencies. Designing the architecture for intelligent candidate matching, automated screening workflows, and scalable hiring pipelines — with a strong focus on compliance and data security.
                 </p>
                 <TechBadgeGroup>
-                  <TechBadge variant="highlight">AI</TechBadge>
-                  <TechBadge variant="highlight">Talent Acquisition</TechBadge>
+                  <TechBadge>AI</TechBadge>
+                  <TechBadge>Talent Acquisition</TechBadge>
                   <TechBadge>NLP</TechBadge>
                   <TechBadge>LLMs</TechBadge>
                   <TechBadge>Security</TechBadge>
@@ -92,10 +92,10 @@ export default function AboutPage() {
                 <p><strong className="text-foreground">Agentic Development</strong> — Designing and shipping systems where 95% of code is AI-generated. Creating custom Claude Code skills, orchestrating multi-agent pipelines, and building MCP integrations. Deep focus on making AI-assisted development secure, auditable, and production-ready.</p>
                 <p><strong className="text-foreground">Security &amp; Compliance</strong> — Embedding security-first principles into AI-driven codebases. Ensuring generated code meets compliance standards, implementing guardrails, and designing review workflows that catch what humans miss.</p>
                 <TechBadgeGroup>
-                  <TechBadge variant="highlight">Claude Code</TechBadge>
-                  <TechBadge variant="highlight">Agentic AI</TechBadge>
-                  <TechBadge variant="highlight">MCP</TechBadge>
-                  <TechBadge variant="highlight">Security</TechBadge>
+                  <TechBadge>Claude Code</TechBadge>
+                  <TechBadge>Agentic AI</TechBadge>
+                  <TechBadge>MCP</TechBadge>
+                  <TechBadge>Security</TechBadge>
                   <TechBadge>LLMs</TechBadge>
                   <TechBadge>Embeddings</TechBadge>
                   <TechBadge>NLP</TechBadge>
@@ -107,9 +107,9 @@ export default function AboutPage() {
                 <p>Supporting startups and companies in building modern, scalable digital products — from backend architecture to frontend delivery.</p>
                 <p><strong className="text-foreground">AI &amp; NLP</strong> — LLM workflows (GPT, LLaMA, Mistral) for information extraction, text generation, and prompt engineering. Semantic search with multilingual embeddings. OCR pipelines with LLM-based normalization. Voice-based automation integrating Speech-to-Text with Telegram. Real-time analytics with Redis and event sourcing.</p>
                 <TechBadgeGroup>
-                  <TechBadge variant="highlight">TypeScript</TechBadge>
-                  <TechBadge variant="highlight">Python</TechBadge>
-                  <TechBadge variant="highlight">Next.js</TechBadge>
+                  <TechBadge>TypeScript</TechBadge>
+                  <TechBadge>Python</TechBadge>
+                  <TechBadge>Next.js</TechBadge>
                   <TechBadge>Node.js</TechBadge>
                   <TechBadge>Redis</TechBadge>
                   <TechBadge>OpenAPI</TechBadge>
@@ -120,7 +120,7 @@ export default function AboutPage() {
               <TimelineItem title="Founder & CTO — BubblePod S.r.l." period="2022 – 2024">
                 <p>Social network built around collaborative audio, later evolving into a real-time 1-to-1 video platform. Designed an event-sourcing backend, integrated WebSockets with Soketi, built the Flutter app with battery optimization, and implemented HLS adaptive bitrate streaming for short-form video.</p>
                 <TechBadgeGroup>
-                  <TechBadge variant="highlight">Flutter</TechBadge>
+                  <TechBadge>Flutter</TechBadge>
                   <TechBadge>Event Sourcing</TechBadge>
                   <TechBadge>WebSockets</TechBadge>
                   <TechBadge>HLS</TechBadge>
@@ -136,8 +136,8 @@ export default function AboutPage() {
               <TimelineItem title="Open Source" subtitle="Pre-AI era" period="2020 – 2022">
                 <p>Built <a href="https://github.com/stratumfoundry/velvet" className="text-foreground underline hover:text-muted transition-colors">Velvet</a>, a modular Flutter framework that reduced delivery time by 40% and cut bugs by 50%. Created <a href="https://github.com/promptify-it/pfy" className="text-foreground underline hover:text-muted transition-colors">pfy</a>, a command-sharing terminal tool for developer collaboration. All hand-written, before the AI explosion.</p>
                 <TechBadgeGroup>
-                  <TechBadge variant="highlight">Flutter</TechBadge>
-                  <TechBadge variant="highlight">Dart</TechBadge>
+                  <TechBadge>Flutter</TechBadge>
+                  <TechBadge>Dart</TechBadge>
                   <TechBadge>CLI</TechBadge>
                   <TechBadge>Open Source</TechBadge>
                 </TechBadgeGroup>
