@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
+import { useTranslations } from 'next-intl';
 import { QRCodeSVG } from 'qrcode.react';
 
 const VCARD = [
@@ -19,12 +20,8 @@ const VCARD = [
   'END:VCARD',
 ].join('\n');
 
-const LINKS = [
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/daniele-tulone-994b38173', description: 'DMs are open.' },
-  { label: 'GitHub', href: 'https://github.com/danieletulone', description: 'Open source & contributions.' },
-];
-
 export function QRHero() {
+  const t = useTranslations('contacts');
   const [downloadUrl, setDownloadUrl] = useState<string>('#');
 
   useEffect(() => {
@@ -54,20 +51,27 @@ export function QRHero() {
           marginSize={0}
           className="w-[160px] h-[160px] sm:w-[240px] sm:h-[240px]"
           role="img"
-          aria-label="QR code containing Daniele Tulone's contact information"
+          aria-label={t('qrAlt')}
         />
       </div>
       <button
         onClick={handleDownload}
         className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-foreground border border-border rounded-full hover:bg-accent hover:border-ring transition-all duration-200"
       >
-        Download .vcf
+        {t('downloadVcf')}
       </button>
     </div>
   );
 }
 
 export function ContactLinks() {
+  const t = useTranslations('contacts');
+
+  const LINKS = [
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/daniele-tulone-994b38173', description: t('linkedinDescription') },
+    { label: 'GitHub', href: 'https://github.com/danieletulone', description: t('githubDescription') },
+  ];
+
   return (
     <div className="flex flex-col gap-1">
       {LINKS.map((link, i) => (

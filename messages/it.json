@@ -1,0 +1,121 @@
+{
+  "common": {
+    "skipToContent": "Vai al contenuto"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Chi Sono",
+    "contacts": "Contatti",
+    "getInTouch": "Contattami"
+  },
+  "home": {
+    "intro": "Creo prodotti in cui il 95% del codice è generato dall'AI — orchestrando agenti, progettando sistemi sicuri e spingendo i limiti dei workflow agentici.",
+    "headline": "Ingegnere AI-native che trasforma problemi di business in software con codice agentico"
+  },
+  "about": {
+    "introHeading": "Sono Daniele",
+    "introSubtitle": "Ingegnere, creatore, sperimentatore instancabile.",
+    "introParagraph1": "Lavoro alla frontiera dello sviluppo assistito dall'AI — progettando workflow agentici, creando skill per Claude Code e producendo prodotti in cui il 95% del codice è generato dall'AI. Non mi limito a usare strumenti AI: li costruisco, li estendo e ne esploro i limiti ogni giorno.",
+    "introParagraph2": "Oltre sei anni di esperienza professionale tra startup (come CTO, founder e consulente) mi hanno insegnato una cosa: la dimensione di un'azienda non definisce la profondità del lavoro. Ho progettato sistemi backend, costruito piattaforme real-time, disegnato framework usati da altri sviluppatori e guidato team — sempre con un orientamento alla sperimentazione e alla delivery.",
+    "introParagraph3": "Oggi il mio focus è chiaro: <strong>codice agentico</strong>, <strong>sicurezza</strong> e <strong>compliance</strong>. Costruisco sistemi veloci da creare, sicuri da deployare e pronti per la produzione.",
+    "introParagraph4": "Chi lavora con me lo sa: sperimento continuamente, imparo velocemente e consegno. Le esperienze possono sembrare non convenzionali sulla carta — ma ognuna è stata un'immersione profonda, non una passata superficiale.",
+    "introParagraph5": "Fuori dal codice: musica (prog, jazz, classici italiani), estetica minimal e apprendimento interdisciplinare.",
+    "workHeading": "Lavoro",
+    "workSubtitle": "Prodotti AI-driven, leadership startup e ingegneria hands-on",
+    "spods": {
+      "title": "CTO — Spods",
+      "period": "In corso",
+      "description": "Guido la visione tecnica di <spodsLink>Spods</spodsLink>, una piattaforma di talent acquisition basata sull'AI costruita per agenzie per il lavoro. Progetto l'architettura per il matching intelligente dei candidati, workflow di screening automatizzati e pipeline di assunzione scalabili — con forte attenzione alla compliance e alla sicurezza dei dati."
+    },
+    "consultant": {
+      "title": "Consulente AI — Indipendente",
+      "period": "In corso",
+      "description": "Consulenza ad aziende su workflow agentici, sicurezza e compliance per lo sviluppo AI-driven.",
+      "agenticTitle": "Sviluppo Agentico",
+      "agenticDescription": "Progettazione e rilascio di sistemi in cui il 95% del codice è generato dall'AI. Creazione di skill personalizzate per Claude Code, orchestrazione di pipeline multi-agente e costruzione di integrazioni MCP. Focus profondo nel rendere lo sviluppo assistito dall'AI sicuro, verificabile e pronto per la produzione.",
+      "securityTitle": "Sicurezza & Compliance",
+      "securityDescription": "Integrazione di principi security-first nelle codebase AI-driven. Garanzia che il codice generato rispetti gli standard di compliance, implementazione di guardrail e progettazione di workflow di review che intercettano ciò che gli umani non vedono.",
+      "openSourceTitle": "Open source",
+      "openSourceDescription": "Ho costruito <marketplaceLink>tool1-marketplace</marketplaceLink>, un marketplace di plugin per Claude Code per costruire, pubblicare e installare plugin che automatizzano i workflow di sviluppo. Creato <templateLink>claude-code-marketplace-template</templateLink>, un template per creare il proprio marketplace di plugin per Claude Code."
+    },
+    "freelance": {
+      "title": "Sviluppatore Full-Stack Freelance",
+      "period": "In corso",
+      "description": "Supporto startup e aziende nella costruzione di prodotti digitali moderni e scalabili — dall'architettura backend alla delivery frontend.",
+      "aiTitle": "AI & NLP",
+      "aiDescription": "Workflow LLM (GPT, LLaMA, Mistral) per estrazione di informazioni, generazione di testo e prompt engineering. Ricerca semantica con embedding multilingue. Pipeline OCR con normalizzazione basata su LLM. Automazione vocale con integrazione Speech-to-Text e Telegram. Analytics real-time con Redis e event sourcing."
+    },
+    "bubblepod": {
+      "title": "Founder & CTO — BubblePod S.r.l.",
+      "period": "2022 – 2024",
+      "description": "Social network costruito attorno all'audio collaborativo, successivamente evoluto in una piattaforma video 1-to-1 in tempo reale. Ho progettato un backend event-sourcing, integrato WebSocket con Soketi, costruito l'app Flutter con ottimizzazione batteria e implementato streaming HLS con bitrate adattivo per video brevi."
+    },
+    "marlon": {
+      "title": "CTO — Marlon",
+      "subtitle": "Progetto Universitario",
+      "period": "2021 – 2022",
+      "description": "Ecosistema collaborativo per lo sviluppo frontend — un editor visuale ibrido e generatore di codice intelligente. Ho costruito un editor stile Figma con sistema di plugin e motore WebGL personalizzato a 60 FPS. Integrato TensorFlow WebAssembly per il riconoscimento di elementi disegnati a mano, e workflow NLP pre-GPT (usando NLTK) per generare codice frontend dal linguaggio naturale."
+    },
+    "openSource": {
+      "title": "Open Source",
+      "subtitle": "Era pre-AI",
+      "period": "2020 – 2022",
+      "description": "Ho costruito <velvetLink>Velvet</velvetLink>, un framework Flutter modulare che ha ridotto i tempi di delivery del 40% e i bug del 50%. Creato <pfyLink>pfy</pfyLink>, uno strumento terminale per la condivisione di comandi tra sviluppatori. Tutto scritto a mano, prima dell'esplosione dell'AI."
+    },
+    "donkey": {
+      "title": "Full-Stack Developer → CTO — DonkeyCommerce S.r.l.",
+      "subtitle": "Prima esperienza professionale",
+      "period": "Inizio carriera",
+      "description": "Startup e-commerce con sede a Milano. Ho iniziato come sviluppatore full-stack, promosso a CTO in pochi mesi. Ho ricostruito l'intera architettura API e CMS, guidato un team di quattro persone e migliorato performance e affidabilità dell'intero stack."
+    },
+    "educationHeading": "Formazione",
+    "educationSubtitle": "Dagli studi classici all'informatica, al design e alla programmazione",
+    "ied": {
+      "title": "Media Design — IED Milano",
+      "subtitle": "Istituto Europeo di Design",
+      "period": "Laurea · 105/110",
+      "description": "Ho vinto una borsa di studio completa a un hackathon. Lo IED ha offerto un ambiente multidisciplinare dove competenze tecniche, creative e concettuali si incontrano. Corsi chiave che hanno plasmato il mio approccio:",
+      "cinema": "Storia del Cinema",
+      "cinemaDescription": "comprendere come hardware, narrativa, luce e suono plasmano la comunicazione",
+      "emotional": "Intelligenza Emotiva",
+      "emotionalDescription": "leadership, collaborazione e gestione di team creativi-tecnici",
+      "design": "Design Thinking",
+      "designDescription": "innovazione strutturata, inclusa la metodologia Google Design Sprint",
+      "interactive": "Installazione Interattiva",
+      "interactiveDescription": "video, audio e coding all'intersezione; prima volta alla guida di un team ibrido"
+    },
+    "unimi": {
+      "title": "Informatica — UNIMI",
+      "subtitle": "Università degli Studi di Milano",
+      "period": "1 Anno",
+      "description": "Ho rafforzato le basi logico-matematiche e ottenuto un'introduzione strutturata allo sviluppo software formale."
+    },
+    "classicalStudies": {
+      "title": "Studi Classici — Liceo Classico T. Fazello",
+      "subtitle": "Diploma di Maturità",
+      "period": "Diploma",
+      "description1": "Letteratura latina, greco antico, filosofia e la disciplina analitica di un'educazione classica. Quel background ha plasmato il mio pensiero: strutturato, curioso, rigoroso.",
+      "description2": "Ho anche frequentato un corso intensivo di memoria e apprendimento — tecniche avanzate per l'organizzazione della memoria e l'efficienza di lettura che hanno poi influenzato il modo in cui imparo, progetto e programmo."
+    },
+    "selfTaught": {
+      "title": "Programmazione Autodidatta",
+      "subtitle": "Percorso autodidatta",
+      "period": "Dall'età di 16 anni",
+      "description": "Sono partito dal cracking di giochi e blog di hacking — non per la loro natura \"underground\" ma perché rivelavano come funziona davvero il software sotto la superficie. Da lì, ho imparato sistematicamente attraverso W3Schools, YouTube e Udemy."
+    }
+  },
+  "contacts": {
+    "downloadVcf": "Scarica .vcf",
+    "qrAlt": "QR code con le informazioni di contatto di Daniele Tulone",
+    "linkedinDescription": "I DM sono aperti.",
+    "githubDescription": "Open source e contributi."
+  },
+  "metadata": {
+    "homeTitle": "Daniele Tulone — Ingegnere AI-Native",
+    "homeDescription": "Ingegnere AI-native che trasforma problemi di business in software con codice agentico. Specializzato in AI agentica, Claude Code, sicurezza e compliance.",
+    "aboutTitle": "Chi Sono",
+    "aboutDescription": "Daniele Tulone — Ingegnere AI-native con 6+ anni di esperienza nella costruzione di workflow agentici, prodotti AI e sistemi sicuri. CTO, consulente, contributore open-source.",
+    "contactsTitle": "Contatti",
+    "contactsDescription": "Contatta Daniele Tulone — consulente AI, CTO e specialista in codice agentico. Disponibile su LinkedIn, GitHub o tramite contatto diretto."
+  }
+}

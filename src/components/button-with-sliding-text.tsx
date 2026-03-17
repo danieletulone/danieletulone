@@ -1,4 +1,7 @@
+'use client';
+
 import React, { ReactNode, Ref } from 'react';
+import { Link } from '@/i18n/navigation';
 
 interface ButtonWithSlidingTextProps {
     children: ReactNode;
@@ -49,15 +52,28 @@ function ButtonWithSlidingText({
 
     if (href) {
         const isExternal = href.startsWith('http');
+        if (isExternal) {
+            return (
+                <a
+                    ref={ref as Ref<HTMLAnchorElement> | undefined}
+                    href={href}
+                    className={baseClasses}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {content}
+                </a>
+            );
+        }
         return (
-            <a
+            <Link
                 ref={ref as Ref<HTMLAnchorElement> | undefined}
                 href={href}
                 className={baseClasses}
-                {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                onClick={onClick}
             >
                 {content}
-            </a>
+            </Link>
         );
     }
 

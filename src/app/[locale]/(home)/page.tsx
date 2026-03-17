@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl';
 import ButtonWithSlidingText from '@/components/button-with-sliding-text';
 import Header from '@/components/header';
 
@@ -23,24 +24,27 @@ const jsonLd = {
 };
 
 export default function HomePage() {
+  const t = useTranslations('home');
+  const tc = useTranslations('common');
+
   return (
     <div id="main" className="h-[100svh] flex flex-col">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <a href="#content" className="skip-to-content">Skip to content</a>
+      <a href="#content" className="skip-to-content">{tc('skipToContent')}</a>
 
       <Header />
 
       <main id="content" className="flex-1 min-h-0 grid grid-cols-1 md:grid-cols-12 gap-4 items-end px-4 sm:px-8 pb-4 sm:pb-8">
         <div className="md:col-span-2 flex flex-col gap-2 order-2 md:order-1 animate-fade-up" style={{ animationDelay: '300ms' }}>
           <p className="text-muted text-xs">
-            I ship products where 95% of the code is AI-generated — orchestrating agents, designing secure systems, and pushing what&apos;s possible with agentic workflows.
+            {t('intro')}
           </p>
         </div>
         <div className="md:col-span-6 md:col-start-6 flex flex-col justify-end items-end order-1 md:order-2 animate-fade-up" style={{ animationDelay: '150ms' }}>
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl text-foreground">AI-native engineer turning business problems into software with agentic code</h1>
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl text-foreground">{t('headline')}</h1>
         </div>
       </main>
 

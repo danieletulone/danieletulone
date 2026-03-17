@@ -1,14 +1,10 @@
 'use client';
 
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { useTranslations } from 'next-intl';
 import ButtonWithSlidingText from '@/components/button-with-sliding-text';
 import ThemeToggle from '@/components/theme-toggle';
-
-const links = [
-  { href: '/', label: 'Home' },
-  { href: '/about', label: 'About' },
-  { href: '/contacts', label: 'Contacts' },
-];
+import LanguageSwitcher from '@/components/language-switcher';
 
 const socials = [
   { href: 'https://github.com/danieletulone', label: 'github' },
@@ -17,8 +13,15 @@ const socials = [
 ];
 
 export default function MobileNav() {
+  const t = useTranslations('nav');
   const [open, setOpen] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
+
+  const links = [
+    { href: '/', label: t('home') },
+    { href: '/about', label: t('about') },
+    { href: '/contacts', label: t('contacts') },
+  ];
 
   const close = useCallback(() => {
     setOpen(false);
@@ -47,6 +50,7 @@ export default function MobileNav() {
 
   return (
     <div className="md:hidden flex items-center justify-end gap-1">
+      <LanguageSwitcher />
       <ThemeToggle />
       <button
         ref={buttonRef}
