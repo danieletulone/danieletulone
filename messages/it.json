@@ -9,16 +9,16 @@
     "getInTouch": "Contattami"
   },
   "home": {
-    "intro": "Creo prodotti in cui il 95% del codice è generato dall'AI — orchestrando agenti, progettando sistemi sicuri e spingendo i limiti dei workflow agentici.",
-    "headline": "Ingegnere AI-native che trasforma problemi di business in software con codice agentico"
+    "intro": "Creo prodotti dove il 95% del codice è generato dall'AI — orchestrando agenti, progettando sistemi sicuri e portando i workflow agentici oltre i loro limiti.",
+    "headline": "Ingegnere AI-native che risolve problemi di business con codice agentico"
   },
   "about": {
     "introHeading": "Sono Daniele",
     "introSubtitle": "Ingegnere, creatore, sperimentatore instancabile.",
-    "introParagraph1": "Lavoro alla frontiera dello sviluppo assistito dall'AI — progettando workflow agentici, creando skill per Claude Code e producendo prodotti in cui il 95% del codice è generato dall'AI. Non mi limito a usare strumenti AI: li costruisco, li estendo e ne esploro i limiti ogni giorno.",
-    "introParagraph2": "Oltre sei anni di esperienza professionale tra startup (come CTO, founder e consulente) mi hanno insegnato una cosa: la dimensione di un'azienda non definisce la profondità del lavoro. Ho progettato sistemi backend, costruito piattaforme real-time, disegnato framework usati da altri sviluppatori e guidato team — sempre con un orientamento alla sperimentazione e alla delivery.",
+    "introParagraph1": "Lavoro alla frontiera dello sviluppo assistito dall'AI — progetto workflow agentici, creo skill per Claude Code e realizzo prodotti dove il 95% del codice è generato dall'AI. Non mi limito a usare strumenti AI: li costruisco, li estendo e ne esploro i limiti ogni giorno.",
+    "introParagraph2": "Più di sei anni tra startup — come CTO, founder e consulente — mi hanno insegnato una cosa: la dimensione di un'azienda non definisce la profondità del lavoro. Ho progettato sistemi backend, costruito piattaforme real-time, creato framework usati da altri sviluppatori e guidato team — sempre con il piede sull'acceleratore tra sperimentazione e delivery.",
     "introParagraph3": "Oggi il mio focus è chiaro: <strong>codice agentico</strong>, <strong>sicurezza</strong> e <strong>compliance</strong>. Costruisco sistemi veloci da creare, sicuri da deployare e pronti per la produzione.",
-    "introParagraph4": "Chi lavora con me lo sa: sperimento continuamente, imparo velocemente e consegno. Le esperienze possono sembrare non convenzionali sulla carta — ma ognuna è stata un'immersione profonda, non una passata superficiale.",
+    "introParagraph4": "Chi lavora con me lo sa: sperimento di continuo, imparo in fretta e consegno. Sulla carta le esperienze possono sembrare poco convenzionali — ma ognuna è stata un'immersione profonda, non una passata superficiale.",
     "introParagraph5": "Fuori dal codice: musica (prog, jazz, classici italiani), estetica minimal e apprendimento interdisciplinare.",
     "workHeading": "Lavoro",
     "workSubtitle": "Prodotti AI-driven, leadership startup e ingegneria hands-on",
@@ -30,25 +30,25 @@
     "consultant": {
       "title": "Consulente AI — Indipendente",
       "period": "In corso",
-      "description": "Consulenza ad aziende su workflow agentici, sicurezza e compliance per lo sviluppo AI-driven.",
+      "description": "Supporto aziende su workflow agentici, sicurezza e compliance per lo sviluppo AI-driven.",
       "agenticTitle": "Sviluppo Agentico",
-      "agenticDescription": "Progettazione e rilascio di sistemi in cui il 95% del codice è generato dall'AI. Creazione di skill personalizzate per Claude Code, orchestrazione di pipeline multi-agente e costruzione di integrazioni MCP. Focus profondo nel rendere lo sviluppo assistito dall'AI sicuro, verificabile e pronto per la produzione.",
+      "agenticDescription": "Progetto e rilascio sistemi dove il 95% del codice è generato dall'AI. Creo skill personalizzate per Claude Code, orchestro pipeline multi-agente e costruisco integrazioni MCP. Focus: rendere lo sviluppo assistito dall'AI sicuro, verificabile e pronto per la produzione.",
       "securityTitle": "Sicurezza & Compliance",
-      "securityDescription": "Integrazione di principi security-first nelle codebase AI-driven. Garanzia che il codice generato rispetti gli standard di compliance, implementazione di guardrail e progettazione di workflow di review che intercettano ciò che gli umani non vedono.",
+      "securityDescription": "Integro principi security-first nelle codebase AI-driven. Mi assicuro che il codice generato rispetti gli standard di compliance, implemento guardrail e progetto workflow di review che intercettano ciò che gli umani non vedono.",
       "openSourceTitle": "Open source",
       "openSourceDescription": "Ho costruito <marketplaceLink>tool1-marketplace</marketplaceLink>, un marketplace di plugin per Claude Code per costruire, pubblicare e installare plugin che automatizzano i workflow di sviluppo. Creato <templateLink>claude-code-marketplace-template</templateLink>, un template per creare il proprio marketplace di plugin per Claude Code."
     },
     "freelance": {
       "title": "Sviluppatore Full-Stack Freelance",
       "period": "In corso",
-      "description": "Supporto startup e aziende nella costruzione di prodotti digitali moderni e scalabili — dall'architettura backend alla delivery frontend.",
+      "description": "Aiuto startup e aziende a costruire prodotti digitali moderni e scalabili — dall'architettura backend alla delivery frontend.",
       "aiTitle": "AI & NLP",
       "aiDescription": "Workflow LLM (GPT, LLaMA, Mistral) per estrazione di informazioni, generazione di testo e prompt engineering. Ricerca semantica con embedding multilingue. Pipeline OCR con normalizzazione basata su LLM. Automazione vocale con integrazione Speech-to-Text e Telegram. Analytics real-time con Redis e event sourcing."
     },
     "bubblepod": {
       "title": "Founder & CTO — BubblePod S.r.l.",
       "period": "2022 – 2024",
-      "description": "Social network costruito attorno all'audio collaborativo, successivamente evoluto in una piattaforma video 1-to-1 in tempo reale. Ho progettato un backend event-sourcing, integrato WebSocket con Soketi, costruito l'app Flutter con ottimizzazione batteria e implementato streaming HLS con bitrate adattivo per video brevi."
+      "description": "Social network nato attorno all'audio collaborativo, poi evoluto in una piattaforma video 1-to-1 in tempo reale. Ho progettato un backend event-sourcing, integrato WebSocket con Soketi, costruito l'app Flutter con ottimizzazione batteria e implementato streaming HLS con bitrate adattivo per video brevi."
     },
     "marlon": {
       "title": "CTO — Marlon",
@@ -88,20 +88,20 @@
       "title": "Informatica — UNIMI",
       "subtitle": "Università degli Studi di Milano",
       "period": "1 Anno",
-      "description": "Ho rafforzato le basi logico-matematiche e ottenuto un'introduzione strutturata allo sviluppo software formale."
+      "description": "Ho consolidato le basi logico-matematiche e ricevuto un'introduzione strutturata allo sviluppo software formale."
     },
     "classicalStudies": {
       "title": "Studi Classici — Liceo Classico T. Fazello",
       "subtitle": "Diploma di Maturità",
       "period": "Diploma",
-      "description1": "Letteratura latina, greco antico, filosofia e la disciplina analitica di un'educazione classica. Quel background ha plasmato il mio pensiero: strutturato, curioso, rigoroso.",
-      "description2": "Ho anche frequentato un corso intensivo di memoria e apprendimento — tecniche avanzate per l'organizzazione della memoria e l'efficienza di lettura che hanno poi influenzato il modo in cui imparo, progetto e programmo."
+      "description1": "Letteratura latina, greco antico, filosofia e la disciplina analitica di un'educazione classica. Quel percorso ha plasmato il mio modo di pensare: strutturato, curioso, rigoroso.",
+      "description2": "Ho frequentato anche un corso intensivo di memoria e apprendimento — tecniche avanzate per l'organizzazione della memoria e la velocità di lettura che hanno poi influenzato il modo in cui imparo, progetto e programmo."
     },
     "selfTaught": {
       "title": "Programmazione Autodidatta",
       "subtitle": "Percorso autodidatta",
       "period": "Dall'età di 16 anni",
-      "description": "Sono partito dal cracking di giochi e blog di hacking — non per la loro natura \"underground\" ma perché rivelavano come funziona davvero il software sotto la superficie. Da lì, ho imparato sistematicamente attraverso W3Schools, YouTube e Udemy."
+      "description": "Sono partito dal cracking di giochi e blog di hacking — non per il lato \"underground\" ma perché rivelavano come funziona davvero il software sotto la superficie. Da lì ho imparato in modo sistematico tramite W3Schools, YouTube e Udemy."
     }
   },
   "contacts": {
@@ -112,9 +112,9 @@
   },
   "metadata": {
     "homeTitle": "Daniele Tulone — Ingegnere AI-Native",
-    "homeDescription": "Ingegnere AI-native che trasforma problemi di business in software con codice agentico. Specializzato in AI agentica, Claude Code, sicurezza e compliance.",
+    "homeDescription": "Ingegnere AI-native che risolve problemi di business con codice agentico. Specializzato in AI agentica, Claude Code, sicurezza e compliance.",
     "aboutTitle": "Chi Sono",
-    "aboutDescription": "Daniele Tulone — Ingegnere AI-native con 6+ anni di esperienza nella costruzione di workflow agentici, prodotti AI e sistemi sicuri. CTO, consulente, contributore open-source.",
+    "aboutDescription": "Daniele Tulone — Ingegnere AI-native con 6+ anni di esperienza. Workflow agentici, prodotti AI e sistemi sicuri. CTO, consulente, contributore open-source.",
     "contactsTitle": "Contatti",
     "contactsDescription": "Contatta Daniele Tulone — consulente AI, CTO e specialista in codice agentico. Disponibile su LinkedIn, GitHub o tramite contatto diretto."
   }
