@@ -3,7 +3,6 @@ import ButtonWithSlidingText from '@/components/button-with-sliding-text';
 import MobileNav from '@/components/mobile-nav';
 import { AvatarViewer } from '@/components/avatar-viewer';
 import ThemeToggle from '@/components/theme-toggle';
-import LanguageSwitcher from '@/components/language-switcher';
 
 export default function Header() {
   const t = useTranslations('nav');
@@ -35,7 +34,6 @@ export default function Header() {
       </div>
 
       <div className="hidden md:flex justify-end items-center gap-2 animate-fade-up" style={{ animationDelay: '80ms' }}>
-        <LanguageSwitcher />
         <ThemeToggle />
         <ButtonWithSlidingText variant="bordered" href="/contacts" className="self-center">
           {t('getInTouch')}

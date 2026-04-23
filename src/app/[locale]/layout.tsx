@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: t('homeDescription'),
     openGraph: {
       type: 'website',
-      locale: locale === 'it' ? 'it_IT' : 'en_US',
+      locale: 'en_US',
       url: 'https://danieletulone.vercel.app',
       siteName: 'Daniele Tulone',
       title: t('homeTitle'),
@@ -58,7 +58,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: '/',
       languages: {
         en: '/en',
-        it: '/it',
       },
     },
   };
@@ -71,7 +70,7 @@ export function generateStaticParams() {
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
 
-  if (!routing.locales.includes(locale as 'en' | 'it')) {
+  if (!routing.locales.includes(locale as 'en')) {
     notFound();
   }
 

@@ -4,7 +4,6 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import ButtonWithSlidingText from '@/components/button-with-sliding-text';
 import ThemeToggle from '@/components/theme-toggle';
-import LanguageSwitcher from '@/components/language-switcher';
 
 const socials = [
   { href: 'https://github.com/danieletulone', label: 'github' },
@@ -50,7 +49,6 @@ export default function MobileNav() {
 
   return (
     <div className="md:hidden flex items-center justify-end gap-1">
-      <LanguageSwitcher />
       <ThemeToggle />
       <button
         ref={buttonRef}
