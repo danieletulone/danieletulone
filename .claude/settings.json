@@ -1,5 +1,6 @@
 {
   "enabledPlugins": {
-    "impeccable@impeccable": true
+    "impeccable@impeccable": true,
+    "commit-commands@claude-plugins-official": true
   }
 }
