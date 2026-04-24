@@ -5,8 +5,18 @@
   "nav": {
     "home": "Home",
     "about": "About",
+    "docs": "Docs",
     "contacts": "Contacts",
     "getInTouch": "Get in Touch"
+  },
+  "docs": {
+    "title": "Docs",
+    "description": "Living documents I update as I learn. Each article is its own layout.",
+    "tagsLabel": "Filter by tag",
+    "clearTags": "Clear",
+    "updated": "Updated",
+    "empty": "No articles match the selected tags.",
+    "backToList": "All docs"
   },
   "home": {
     "intro": "I ship products where 95% of the code is AI-generated — orchestrating agents, designing secure systems, and pushing agentic workflows beyond their limits.",
@@ -116,6 +126,8 @@
     "aboutTitle": "About",
     "aboutDescription": "Daniele Tulone — AI-native engineer with 6+ years building agentic workflows, AI-powered products, and secure systems. CTO, consultant, open-source contributor.",
     "contactsTitle": "Contacts",
-    "contactsDescription": "Get in touch with Daniele Tulone — AI consultant, CTO, and agentic code specialist. Available on LinkedIn, GitHub, or via direct contact."
+    "contactsDescription": "Get in touch with Daniele Tulone — AI consultant, CTO, and agentic code specialist. Available on LinkedIn, GitHub, or via direct contact.",
+    "docsTitle": "Docs",
+    "docsDescription": "Living documents by Daniele Tulone — notes on agentic AI, Claude Code, security, and engineering, updated as they evolve."
   }
 }

@@ -19,6 +19,7 @@ export default function MobileNav() {
   const links = [
     { href: '/', label: t('home') },
     { href: '/about', label: t('about') },
+    { href: '/docs', label: t('docs') },
     { href: '/contacts', label: t('contacts') },
   ];
 
